@@ -14,29 +14,29 @@ training: Directory for training scripts.
 util: Utility scripts and functions.
 visualizations: Scripts for various visualization techniques.
 
-#### Usage
+### Usage
 To run, execute the main.py script located in the prototype directory. The script loads historical stock price data, preprocesses it, trains the XGBoost model, and evaluates its performance.
 
-bash
-Copy code
+```bash
 python3.10 prototype/main.py
+```
 Ensure that you have the necessary Python libraries and dependencies installed. You can modify the script and parameters to customize the model's behavior and hyperparameters.
-bash
-Copy code
+```bash
 python3.10 -m pip install -r requirements.txt
+```
 
-#### Data
+### Data
 The project uses historical stock price data, which should be placed in the data directory. The data should include columns like 'ticker,' 'date,' 'open,' 'high,' 'low,' 'close,' and other relevant features. The data is separated into 5,541 individual csv files for each ticker.
 
-#### Results
+### Results
 The model generates predictions for stock prices and evaluates its performance, displaying metrics such as the Root Mean Squared Error (RMSE) and feature importances, it kind of maybe works depending on how far into the future it tries to predict.
 
-#### Visualizations
+### Visualizations
 The project includes visualization scripts for analyzing the model's results, including Bokeh-based plots (visbokeh.py), Matplotlib Finance charts (vismplfinance.py), and Plotly visualizations (visplotly.py). You can explore these visualizations to gain insights into the model's predictions and actual stock prices.
 
 If you happen to know what you are doing unlike me submit a PR :)
 
-#### Known Issues
+### Known Issues
 - will not predict values above a certain number and the predicions will plateau (mainly a problem when predicting >7days ahead)
 - sometimes it looks like there appears noise in the y_test data which should not happen idk, this causes alignment issues in the visualizations
 - vastly different performance depending on the stock(s) it is trained on or predicting, likely due to a certain stock's innate trends being more in line with the architecture of the algorithm but thats a theory.
