@@ -12,7 +12,7 @@ prototype: Main directory containing the project's source code (will be moved to
 find params.py: Script for finding optimal hyperparameters (this may very well be a terrible way of accomplishing this but it works so far).
 training: Directory for training scripts.
 util: Utility scripts and functions.
-visualizations: Scripts for various visualization techniques.
+visualizations: Scripts for various visualization techniques, not pushed right now they are mostly bad or broken.
 
 ### Usage
 To run, execute the main.py script located in the prototype directory. The script loads historical stock price data, preprocesses it, trains the XGBoost model, and evaluates its performance.
