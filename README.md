@@ -42,3 +42,4 @@ If you happen to know what you are doing unlike me submit a PR :)
 - vastly different performance depending on the stock(s) it is trained on or predicting, likely due to a certain stock's innate trends being more in line with the architecture of the algorithm but thats a theory.
 - categorical features like the ticker symbol or other things I might add are dubious in XGBoost, they are currently being converted to numbers and represented that way but there is probably a better method
 - when training the model on multiple stocks it falls apart rapidly, maybe this could be fixed with more categorical features like industry, country, or type.
+- the pkl format is kind of really bad and should be changed to h5
