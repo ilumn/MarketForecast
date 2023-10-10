@@ -3,16 +3,16 @@ A WIP attempt at stock market prediction using machine learning
 Stock Price Prediction Model
 This project is a machine learning-based stock price prediction model that uses historical stock price data for prediction. The model uses various technical indicators and XGBoost, a gradient boosting algorithm, to make predictions. This README provides an overview of the project's structure and functionality.
 
-dashboard`: Will eventually contain a web dashboard for viewing graphs.
-data: Data directory where historical stock price data is stored.
-database: Directory for database-related files such as moving the historical data to a database.
-models: Directory to store numerous trained machine learning models mostly all very minor parameter tweaks from optimization.
-notebooks: Jupyter notebooks related to the project.
-prototype: Main directory containing the project's source code (will be moved to training eventually).
-find params.py: Script for finding optimal hyperparameters (this may very well be a terrible way of accomplishing this but it works so far).
-training: Directory for training scripts.
-util: Utility scripts and functions.
-visualizations: Scripts for various visualization techniques, not pushed right now they are mostly bad or broken.
+`dashboard`: Will eventually contain a web dashboard for viewing graphs.
+`data`: Data directory where historical stock price data is stored.
+`database`: Directory for database-related files such as moving the historical data to a database.
+`models`: Directory to store numerous trained machine learning models mostly all very minor parameter tweaks from optimization.
+`notebooks`: Jupyter notebooks related to the project.
+`prototype`: Main directory containing the project's source code (will be moved to training eventually).
+`find` params.py: Script for finding optimal hyperparameters (this may very well be a terrible way of accomplishing this but it works so far).
+`training`: Directory for training scripts.
+`util`: Utility scripts and functions.
+`visualizations`: Scripts for various visualization techniques, not pushed right now they are mostly bad or broken.
 
 ### Usage
 To run, execute the main.py script located in the prototype directory. The script loads historical stock price data, preprocesses it, trains the XGBoost model, and evaluates its performance.
@@ -43,3 +43,4 @@ If you happen to know what you are doing unlike me submit a PR :)
 - categorical features like the ticker symbol or other things I might add are dubious in XGBoost, they are currently being converted to numbers and represented that way but there is probably a better method
 - when training the model on multiple stocks it falls apart rapidly, maybe this could be fixed with more categorical features like industry, country, or type.
 - the pkl format is kind of really bad and should be changed to h5
+- I should probably use GitLFS for the dataset 

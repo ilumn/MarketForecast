@@ -1,0 +1,5 @@
+prototype/__pycache__/*
+dashboard/static.py
+*.env
+training/*
+visualizations/*
