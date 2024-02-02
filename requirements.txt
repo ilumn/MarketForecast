@@ -1,6 +1,6 @@
 altair==4.2.2
 bokeh==3.2.2
-dash==2.13.0
+dash==2.15.0
 dash_core_components==2.0.0
 dash_html_components==2.0.0
 holoviews==1.17.1
